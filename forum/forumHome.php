@@ -82,7 +82,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="bottom-right">
-            <button type="submit"><strong>Find User</strong></button>
+            <button onclick='window.location.href = "findUser.php"'><strong>Find User</strong></button>
         </div>
     </div>
     
