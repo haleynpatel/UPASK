@@ -8,7 +8,6 @@
 UPask is an online forum platform designed exclusively for UPS employees to facilitate knowledge sharing and problem-solving within the UPS developer community. It provides an environment where employees can ask and answer technical questions related to their work.
 
 ## Features
-![Image Alt Text](/UPaskSchema.JPG)
 
 - **Tag-based System**: Users can assign themselves tags indicating their level of familiarity or proficiency in specific technical areas. These tags help in identifying relevant experts within the UPS community.
 
@@ -22,7 +21,7 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - **Secure Authentication**: UPask implements a secure authentication system to ensure that only authorized UPS employees can access the platform, maintaining data privacy and security.
 
 ## Database Schema
-
+![Image Alt Text](/UPaskSchema.JPG)
 ## Technologies Used
 
 - HTML
