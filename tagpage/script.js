@@ -56,7 +56,7 @@ const skills = [
       selectedSkillsContainer.appendChild(selectedSkill);
  
       const separator = document.createElement("span");
-      separator.innerText = "; ";
+     // separator.innerText = "; ";
       selectedSkillsContainer.appendChild(separator);
  
       searchInput.value = "";

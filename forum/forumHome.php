@@ -52,20 +52,20 @@ $result = $conn->query($sql);
             Visit the official UPS website <a href="https://www.ups.com/us/en/global.page"><strong></strong>here</a>.
         </div>
         <div class="top-right">
-            <button type="button">
+            <button type="button" style="cursor: pointer;">
                 <img src="mainpage/images/settings.png" height="15em" width="15em" />
                 Settings
               </button>
-              <button type="button">
+              <button type="button" style="cursor: pointer;">
                 <img src="mainpage/images/notification.png" height="15em" width="15em" />
                 Activity
               </button>
-
            <button onclick='window.location.href = "tagpage/tagpage.php"'>
+
                 <img src="mainpage/images/goodicon.png"  height="15em" width="15em" /> Tags
               </button>
 
-              <button onclick='window.location.href = "profile/profile.html"'>
+              <button onclick='window.location.href = "profile/profile.html"' style="cursor: pointer;">
                 <img src="mainpage/images/profile.png"  height="15em" width="15em" />
                 Profile
               </button>
@@ -73,7 +73,7 @@ $result = $conn->query($sql);
     </div>
     <div class="header-bottom">
         <div class="bottom-right">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/859px-UPS_Logo_Shield_2017.svg.png" width="50em"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/859px-UPS_Logo_Shield_2017.svg.png" style="cursor: pointer;" width="50em"></a>
         </div>
 
         <div class="bottom-middle">
@@ -82,7 +82,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="bottom-right">
-            <button type="submit"><strong>Log In  ></strong></button>
+            <button type="submit"><strong>Find User</strong></button>
         </div>
     </div>
     
@@ -113,13 +113,13 @@ $result = $conn->query($sql);
     <div id="post">
     <h1>Create Post </h1>
     <form action="insert_post.php" method="POST">
-        <label for="title">Post Title:</label>
+        <label for="title">Title:</label>
     <input type="text" id="title" name="title" required><br><br>
 
-    <label for="content">Post Text:</label><br>
+    <label for="content">Text:</label><br>
     <textarea id="content" name="content" required></textarea><br><br>
     <input type="content" value="Add Tags"><br><br>
-    <input type="submit" value="Submit">
+    <input style="cursor: pointer" type="submit" value="Submit">
 </form>
     </div>
 <?php
@@ -145,7 +145,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <form action="'.$_SERVER['PHP_SELF'].'" method="POST">
                     <input type="hidden" name="postId" value="'.$post_id.'">
                     <input type="text" name="commentContent" placeholder="Enter your comment" required>
-                    <button type="submit">Add Comment</button>
+                    <button type="submit" style="cursor: pointer;">Add Comment</button>
                 </form>
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-comment"></i>
