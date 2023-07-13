@@ -3,7 +3,7 @@
 [![HTML](https://img.shields.io/badge/HTML-Markup%20Language-orange)](https://www.w3.org/html/)
 [![CSS](https://img.shields.io/badge/CSS-Stylesheet%20Language-blueviolet)](https://www.w3.org/Style/CSS/Overview.en.html)
 [![PHP](https://img.shields.io/badge/PHP-Backend%20Development-purple)](https://www.php.net/)
-[![MySQL](https://img.shields.io/badge/MySQL-Database%20Management-navyblue)](https://www.mysql.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database%20Management-blue)](https://www.mysql.com/)
 
 UPask is an online forum platform designed exclusively for UPS employees to facilitate knowledge sharing and problem-solving within the UPS developer community. It provides an environment where employees can ask and answer technical questions related to their work.
 
