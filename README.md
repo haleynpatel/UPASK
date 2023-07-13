@@ -37,7 +37,7 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - Jason Shin - UVA '26
 - Pranav Nori - Rutgers '25
 - Kishan Patel - Rutgers '25
-- Haley Patel - Rutgers '25
+- Haley Patel - NJIT '25
 - Allen Shen - UMich '25
 
 ## Acknowledgments
