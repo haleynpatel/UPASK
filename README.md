@@ -22,7 +22,7 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
   - Forum Page: The main platform where users can browse, post questions, and comment replies.
 ![Image Alt Text](/comments.JPG)
 - **Secure Authentication**: UPask implements an intuitive authentication system to ensure that only authorized UPS employees can access the platform, maintaining data privacy and security.
-
+![Image Alt Text](/snip.JPG)
 ## Technologies Used
 
 - HTML
