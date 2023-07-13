@@ -65,11 +65,11 @@ body{
     padding-bottom:1em;
 }
 .bottom-right{
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .bottom-right button{
     background-color: #ffc303;
-    padding:1em;
+    padding:1.2em;
     border: none;
     border-radius: 3em;
     padding-left:2em;

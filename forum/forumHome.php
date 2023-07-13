@@ -113,12 +113,14 @@ $result = $conn->query($sql);
     <div id="post">
     <h1>Create Post </h1>
     <form action="insert_post.php" method="POST">
-        <label for="title">Title:</label>
+        <label for="title">Title:</label><br>
     <input type="text" id="title" name="title" required><br><br>
 
     <label for="content">Text:</label><br>
-    <textarea id="content" name="content" required></textarea><br><br>
-    <input type="content" value="Add Tags"><br><br>
+    <textarea id="content" name="content" rows="5" cols = "100" required></textarea><br><br>
+
+        <label for="tags">Tags:</label><br>
+     <input type="text" id="tags" name="tags" placeholder="Add Tags"><br><br>
     <input style="cursor: pointer" type="submit" value="Submit">
 </form>
     </div>
@@ -146,10 +148,10 @@ if ($result && mysqli_num_rows($result) > 0) {
                     <input type="hidden" name="postId" value="'.$post_id.'">
                     <input type="text" name="commentContent" placeholder="Enter your comment" required>
                     <button type="submit" style="cursor: pointer;">Add Comment</button>
-                </form>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-comment"></i>
-                <i class="fa-regular fa-share-from-square"></i>
+                </form><br>
+                <i class="fa-regular fa-heart" style="cursor: pointer;"></i>
+                <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
+                <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
             </div>';
         echo '</div>';
         $commentsQuery = "SELECT * FROM comment WHERE post_id = $post_id";
@@ -157,6 +159,7 @@ if ($result && mysqli_num_rows($result) > 0) {
 
         if ($commentsResult && mysqli_num_rows($commentsResult) > 0) {
             echo "<h3>Comments:</h3>";
+
             while ($commentRow = mysqli_fetch_assoc($commentsResult)) {
                 $commentContent = $commentRow['content'];
                 echo "<p>: $commentContent</p>";
@@ -175,34 +178,34 @@ if ($result && mysqli_num_rows($result) > 0) {
         <h1>Title</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi perferendis consequuntur est, voluptates voluptatum officiis optio quae, laudantium soluta corporis dolorum nam nulla. At veritatis earum odit. Earum, est.</p>
         <div class="social-icons">
-            <i class="fa-regular fa-heart"></i> 
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-regular fa-share-from-square"></i>
+            <i class="fa-regular fa-heart" style="cursor: pointer;"></i> 
+            <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
+            <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
         </div>
     </div>
     <div id="post">
         <h1>Title</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi perferendis consequuntur est, voluptates voluptatum officiis optio quae, laudantium soluta corporis dolorum nam nulla. At veritatis earum odit. Earum, est.</p>
         <div class="social-icons">
-            <i class="fa-regular fa-heart"></i> 
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-regular fa-share-from-square"></i>
+            <i class="fa-regular fa-heart" style="cursor: pointer;"></i> 
+            <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
+            <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
         </div>
     </div>
     <div id="post">
         <h1>Title</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi perferendis consequuntur est, voluptates voluptatum officiis optio quae, laudantium soluta corporis dolorum nam nulla. At veritatis earum odit. Earum, est.</p>
         <div class="social-icons">
-            <i class="fa-regular fa-heart"></i> 
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-regular fa-share-from-square"></i>
+            <i class="fa-regular fa-heart" style="cursor: pointer;"></i> 
+            <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
+            <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
         </div>
     </div>
     <div class="footer">
         <div class="left-foot">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/859px-UPS_Logo_Shield_2017.svg.png" width="25em"></a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/859px-UPS_Logo_Shield_2017.svg.png" width="25em" style="cursor: pointer;"></a>
         </div>
-        <div class="right-foot">
+        <div class="right-foot" style="cursor: pointer;">
             Terms and conditions | Contact | Help
         </div>
     </div>
