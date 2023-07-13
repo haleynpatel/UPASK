@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   mysqli_close($connection);
 
   // Redirect or display a success message
-  echo "Form submitted successfully!";
+  echo "success";
+  header("Location: tagpagev3.php");
 }
 ?>
