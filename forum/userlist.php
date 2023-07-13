@@ -13,7 +13,6 @@
 <body>
 </body>
 </html>
-
 <body>
 <div class="header-top" id="top">
         <div class="top-left">
@@ -45,11 +44,9 @@
           </a>
         </div>
     </div>
-    
 <div class="container">
 <div class = "canvas">
 <?php
-// Establish database connection
 $servername = "localhost";
 $username = "upask";
 $password = "upser";

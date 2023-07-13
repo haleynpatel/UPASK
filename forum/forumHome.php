@@ -26,8 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['commentContent'])) {
 // Fetch posts from the database
 $sql = "SELECT * FROM post ORDER BY post_id DESC";
 $result = $conn->query($sql);
-// Close the database connection
-//$conn->close();
+
 ?>
 
 
@@ -88,16 +87,7 @@ $result = $conn->query($sql);
     </div>
     
     <div class="container">
-    <!-- Debugging session
-        
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <h2 class="text-center">Welcome to the Forum</h2>
-        <p class="text-center">User ID: <?php session_start(); echo $_SESSION['user_id']; ?></p>
-      </div>
-    </div> 
 
-    --> 
     <div class="tags">
         <span>Popular Tags</span>
         <input type="submit" id="tag" value="Java">
