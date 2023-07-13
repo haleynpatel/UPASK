@@ -20,8 +20,6 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 
 - **Secure Authentication**: UPask implements a secure authentication system to ensure that only authorized UPS employees can access the platform, maintaining data privacy and security.
 
-## Database Schema
-![Image Alt Text](/UPaskSchema.JPG)
 ## Technologies Used
 
 - HTML
@@ -29,6 +27,9 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - JavaScript
 - PHP
 - MySQL
+
+## Database Schema
+![Image Alt Text](/UPaskSchema.JPG)
 
 ## Creators
 - Jason Shin - UVA '26
