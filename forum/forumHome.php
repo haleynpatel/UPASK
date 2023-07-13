@@ -122,7 +122,7 @@ $result = $conn->query($sql);
         <label for="tags">Tags:</label><br>
      <input type="text" id="tags" name="tags" placeholder="Add Tags"><br><br>
     <input style="cursor: pointer" type="submit" value="Submit">
-</form>
+    </form>
     </div>
 <?php
 // Display posts from the passed $result variable
@@ -146,7 +146,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         echo '<div class="social-icons">
                 <form action="'.$_SERVER['PHP_SELF'].'" method="POST">
                     <input type="hidden" name="postId" value="'.$post_id.'">
-                    <input type="text" name="commentContent" placeholder="Enter your reply" required>
+                    <input type="commenttext" name="commentContent" placeholder="Enter your reply" required>
                     <button type="submit" style="cursor: pointer;">Add Comment</button>
                 </form><br>
                 <i class="fa-regular fa-heart" style="cursor: pointer;"></i>
@@ -158,7 +158,7 @@ if ($result && mysqli_num_rows($result) > 0) {
         $commentsResult = mysqli_query($conn, $commentsQuery);
 
         if ($commentsResult && mysqli_num_rows($commentsResult) > 0) {
-            echo "<h3>Comments:</h3>";
+            echo '<div class = "comment"><h3>Comments:</h3>';
 
             while ($commentRow = mysqli_fetch_assoc($commentsResult)) {
                 $commentContent = $commentRow['content'];
@@ -171,6 +171,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                 }
                 echo "<p>$commentUserId : $commentContent</p>";
             }
+            echo '</div>';
         } else {
             echo "<p>No comments yet.</p>";
         }

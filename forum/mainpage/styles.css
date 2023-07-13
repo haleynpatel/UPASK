@@ -112,9 +112,29 @@ body{
     border: 1px solid #ccc;
     margin-bottom: 1em;;
 }
+#post:hover{
+    background-color: #f2f1ef;
+    cursor: pointer;
+}
 #post h2{
     font-size:24 px;
     color: rgb(117, 83, 47);
+}
+#post input[type="text"],
+#post textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+#post input[type="commenttext"],
+#post textarea {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 .canvas{
     width:100%;

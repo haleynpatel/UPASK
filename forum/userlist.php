@@ -40,7 +40,7 @@
         </div>
     </div>
     <div class="bottom-right">
-          <a href="../forumHome.php" target="_blank" class="button-link">
+          <a href="..forumHome.php" target="_blank" class="button-link">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/859px-UPS_Logo_Shield_2017.svg.png" style="cursor: pointer;" width="50em">
           </a>
         </div>
