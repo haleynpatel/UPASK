@@ -26,6 +26,10 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - CSS
 - JavaScript
 - PHP
+- MySQL
+
+## Database Schema
+![Image Alt Text](/UPaskSchema.JPG)
 
 ## Creators
 - Jason Shin - UVA '26
