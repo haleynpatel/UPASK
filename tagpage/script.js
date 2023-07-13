@@ -56,7 +56,11 @@ const skills = [
       selectedSkillsContainer.appendChild(selectedSkill);
  
       const separator = document.createElement("span");
+<<<<<<< HEAD:forum/tagpage/script.js
       separator.innerText = " ";
+=======
+     // separator.innerText = "; ";
+>>>>>>> 22e126591f97c290663093a745d153c66deaeb2a:tagpage/script.js
       selectedSkillsContainer.appendChild(separator);
  
       searchInput.value = "";
