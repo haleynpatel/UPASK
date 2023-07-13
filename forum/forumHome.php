@@ -60,8 +60,8 @@ $result = $conn->query($sql);
                 <img src="mainpage/images/notification.png" height="15em" width="15em" />
                 Activity
               </button>
+           <button onclick='window.location.href = "tagpage/tagpage.php"'>
 
-           <button onclick='window.location.href = "tagpage/tagpage.html"' style="cursor: pointer;">
                 <img src="mainpage/images/goodicon.png"  height="15em" width="15em" /> Tags
               </button>
 

@@ -1,5 +1,5 @@
 # List of tag names
-tag_names = ["HTML", "JavaScript", "CSS", "Python"]
+tag_names = ["HTML", "JavaScript", "CSS", "Python", "React", "Angular"]
 
 # Generate the INSERT INTO queries
 queries = []
