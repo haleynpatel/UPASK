@@ -23,12 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usertagQuery = "INSERT INTO usertag (user_id1, tag_id1) VALUES ('$userId', '$tagId')";
     mysqli_query($connection, $usertagQuery);
 
-
   // Close the database connection
   mysqli_close($connection);
 
-  // Redirect or display a success message
-  echo "success";
   header("Location: tagpagev3.php");
 }
 ?>
