@@ -23,12 +23,10 @@
                 <img src="../mainpage/images/notification.png" height="15em" width="15em" />
                 Activity
               </button>
-
            <button onclick='window.location.href = "../tagpage/tagpage.html"'>
                 <img src="../mainpage/images/goodicon.png"  height="15em" width="15em" />
                 Tags
               </button>
-
               <button onclick='window.location.href = "../profile/profile.html"'>
                 <img src="../mainpage/images/profile.png"  height="15em" width="15em" />
                 Profile
@@ -42,9 +40,7 @@
           </a>
         </div>
 
-
-
-        
+      
 
   <title>User Information</title>
   <style>
@@ -110,16 +106,18 @@
     <label for="department">Department:</label>
     <input type="text" id="department" name="department" required>
 
-
-    <div class="container">
-      <h1>Choose Your Skill:</h1>
-      <div class="profile">
-        <input type="text" id="searchInput" placeholder="Search for coding languages and skills">
-        <div id="autocompleteContainer" class="autocomplete-container"></div>
-      </div>
+  <div class="container">
+    <h1>Choose Your Skill:</h1>
+    <div class="profile">
+      <input type="text" id="searchInput" placeholder="Search for coding languages and skills">
+      <div id="autocompleteContainer" class="autocomplete-container"></div>
+    </div>
+    <div class="selected-skills-container">
+      <h2>Your Skills:</h2>
       <div id="selectedSkills" class="selected-skills"></div>
     </div>
- 
+  </div>
+  
     <script src="script.js"></script>
 
 
@@ -129,5 +127,31 @@
 
   
 </body>
+
+<style>
+
+.selected-skills-container {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin-bottom here */
+  
+}
+
+.selected-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selected-skill {
+  background-color: #ddd;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #333;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
 
 
