@@ -9,16 +9,17 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 
 ## Features
 
-- **Tag-based System**: Users can assign themselves tags indicating their level of familiarity or proficiency in specific technical areas. These tags help in identifying relevant experts within the UPS community.
+- **Tag-based System**: Users can assign themselves tags indicating their level of proficiency in specific technical areas. These tags help in identifying relevant experts within the UPS community.
 
 - **Categorization and Prompting**: Posts can be tagged to categorize them and prompt employees with relevant expertise to respond quickly.
 
 - **User Interface**: The project utilizes HTML, CSS, JavaScript, and PHP to create a functional UI with the following pages:
+  
   - Login Page: Users can securely log in to their UPask accounts.
   - Profile Creation/Customization Page: Users can create and customize their profiles with relevant information.
-  - Forum Site: The main platform where users can browse, ask questions, and provide answers.
+  - Forum Site: The main platform where users can browse, post questions, and comment replies.
 
-- **Secure Authentication**: UPask implements a secure authentication system to ensure that only authorized UPS employees can access the platform, maintaining data privacy and security.
+- **Secure Authentication**: UPask implements an intuitive authentication system to ensure that only authorized UPS employees can access the platform, maintaining data privacy and security.
 
 ## Technologies Used
 
