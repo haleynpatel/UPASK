@@ -1,0 +1,48 @@
+body {
+    background-color: #f2f1ef;
+    margin: 0;
+}
+
+.header-top {
+    display: flex;
+    background-color: #f2f1ef;
+    padding: 1em;
+    justify-content: space-between;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin: 0;
+}
+
+.top-left {
+    padding-left: 1em;
+}
+
+.top-left a {
+    text-decoration: none;
+    color: #724c37;
+}
+
+.top-left a:hover {
+    color: #724c37b6;
+}
+
+.top-right {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.settings-container {
+    /* Add your styles for the settings container */
+}
+
+.footer {
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 4em;
+    padding-top: 2em;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
