@@ -1,5 +1,8 @@
 # UPask: Collaborative Technical Forum for UPS Employees
-
+[![JavaScript](https://img.shields.io/badge/JavaScript-Frontend%20Development-yellow)](https://www.javascript.com)
+[![HTML](https://img.shields.io/badge/HTML-Markup%20Language-orange)](https://www.w3.org/html/)
+[![CSS](https://img.shields.io/badge/CSS-Stylesheet%20Language-blueviolet)](https://www.w3.org/Style/CSS/Overview.en.html)
+[![PHP](https://img.shields.io/badge/PHP-Backend%20Development-purple)](https://www.php.net/)
 UPask is an online forum platform designed exclusively for UPS employees to facilitate knowledge sharing and problem-solving within the UPS developer community. It provides an environment where employees can ask and answer technical questions related to their work.
 
 ## Features
@@ -21,7 +24,7 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - CSS
 - JavaScript
 - PHP
-- 
+
 ## Creators
 - Jason Shin - UVA '26
 - Pranav Nori - Rutgers '25
