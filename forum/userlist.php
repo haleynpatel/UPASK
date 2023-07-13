@@ -75,16 +75,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Display the list of usernames and emails
   if (mysqli_num_rows($result) > 0) {
+    echo '<div class="user-list">';
     echo "<h2>User List:</h2>";
     echo "<ul>";
     while ($row = mysqli_fetch_assoc($result)) {
       $username = $row['username'];
       $email = $row['email'];
-      echo "<li>Username: $username, Email: $email</li>";
+      echo "<li><span class='label'></span> <span class='username'>$username</span> <br></br> <span class='label'>Email:</span> <span class='email'>$email</span></li>";
     }
     echo "</ul>";
+    echo '</div>';
   } else {
-    echo "<p>No users found for the selected tag.</p>";
+    echo "<p class='no-users'>No users found for the selected tag.</p>";
   }
 
   // Close the database connection
