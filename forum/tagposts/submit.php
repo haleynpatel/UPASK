@@ -26,6 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Close the database connection
   mysqli_close($connection);
 
-  header("Location: tagpagev3.php");
+  header("Location: tagpage.php");
 }
 ?>
