@@ -29,7 +29,7 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - JavaScript
 - PHP
 - MySQL
-- 
+
 ## Creators
 - Jason Shin - UVA '26
 - Pranav Nori - Rutgers '25
