@@ -16,10 +16,11 @@ UPask is an online forum platform designed exclusively for UPS employees to faci
 - **User Interface**: The project utilizes HTML, CSS, JavaScript, and PHP to create a functional UI with the following pages:
   
   - Login Page: Users can securely log in to their UPask accounts.
+ ![Image Alt Text](/empower.JPG)
   - Profile Creation/Customization Page: Users can create and customize their profiles with relevant information.
   - Find User Page: Users can search for specific UPSers by filtering with tags.
   - Forum Page: The main platform where users can browse, post questions, and comment replies.
-
+![Image Alt Text](/comments.JPG)
 - **Secure Authentication**: UPask implements an intuitive authentication system to ensure that only authorized UPS employees can access the platform, maintaining data privacy and security.
 
 ## Technologies Used
