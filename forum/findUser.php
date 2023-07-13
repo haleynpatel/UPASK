@@ -125,7 +125,7 @@ $tags = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 
 <?php
-// Close the database connection
+
 mysqli_close($connection);
 ?>
 
