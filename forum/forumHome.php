@@ -109,7 +109,6 @@ $result = $conn->query($sql);
         <input type="submit" id="tag" value="React">
     </div>
 
-
     <div id="post">
     <h1>Create Post </h1>
     <form action="insert_post.php" method="POST">
@@ -140,20 +139,20 @@ if ($result && mysqli_num_rows($result) > 0) {
         $username = $row['username'];
         
         echo '<div id="post">';
-        echo "<h2> $username</h2>";
         echo "<h1>$post_title</h1>";
+        echo "<h2> $username</h2>";
         echo "<p> $post_content</p>";
         echo '<div class="social-icons">
                 <form action="'.$_SERVER['PHP_SELF'].'" method="POST">
                     <input type="hidden" name="postId" value="'.$post_id.'">
-                    <input type="text" name="commentContent" placeholder="Enter your comment" required>
+                    <input type="text" name="commentContent" placeholder="Enter your reply" required>
                     <button type="submit" style="cursor: pointer;">Add Comment</button>
                 </form><br>
                 <i class="fa-regular fa-heart" style="cursor: pointer;"></i>
                 <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
                 <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
             </div>';
-        echo '</div>';
+
         $commentsQuery = "SELECT * FROM comment WHERE post_id = $post_id";
         $commentsResult = mysqli_query($conn, $commentsQuery);
 
@@ -162,45 +161,26 @@ if ($result && mysqli_num_rows($result) > 0) {
 
             while ($commentRow = mysqli_fetch_assoc($commentsResult)) {
                 $commentContent = $commentRow['content'];
-                echo "<p>: $commentContent</p>";
+                $commentUserId = $commentRow['user_id'];
+                $usernameQuery = "SELECT username FROM user WHERE user_id = $commentUserId";
+                $usernameResult = mysqli_query($conn, $usernameQuery);
+                if($usernameResult){
+                    $row = mysqli_fetch_assoc($usernameResult);
+                    $commentUserId = $row['username'];
+                }
+                echo "<p>$commentUserId : $commentContent</p>";
             }
         } else {
             echo "<p>No comments yet.</p>";
         }
-        // Generate the HTML markup for each post card
+        echo '</div>';
+
     }
     $conn->close();
 } else {
     echo "No posts available.";
 }
 ?>
-    <div id="post">
-        <h1>Title</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi perferendis consequuntur est, voluptates voluptatum officiis optio quae, laudantium soluta corporis dolorum nam nulla. At veritatis earum odit. Earum, est.</p>
-        <div class="social-icons">
-            <i class="fa-regular fa-heart" style="cursor: pointer;"></i> 
-            <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
-            <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
-        </div>
-    </div>
-    <div id="post">
-        <h1>Title</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi perferendis consequuntur est, voluptates voluptatum officiis optio quae, laudantium soluta corporis dolorum nam nulla. At veritatis earum odit. Earum, est.</p>
-        <div class="social-icons">
-            <i class="fa-regular fa-heart" style="cursor: pointer;"></i> 
-            <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
-            <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
-        </div>
-    </div>
-    <div id="post">
-        <h1>Title</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi perferendis consequuntur est, voluptates voluptatum officiis optio quae, laudantium soluta corporis dolorum nam nulla. At veritatis earum odit. Earum, est.</p>
-        <div class="social-icons">
-            <i class="fa-regular fa-heart" style="cursor: pointer;"></i> 
-            <i class="fa-regular fa-comment" style="cursor: pointer;"></i>
-            <i class="fa-regular fa-share-from-square" style="cursor: pointer;"></i>
-        </div>
-    </div>
     <div class="footer">
         <div class="left-foot">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/UPS_Logo_Shield_2017.svg/859px-UPS_Logo_Shield_2017.svg.png" width="25em" style="cursor: pointer;"></a>
