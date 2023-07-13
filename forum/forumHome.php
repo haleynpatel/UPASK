@@ -61,7 +61,7 @@ $result = $conn->query($sql);
                 Activity
               </button>
 
-           <button onclick='window.location.href = "tagpage/tagpage.html"'>
+           <button onclick='window.location.href = "tagpage/tagpage.php"'>
                 <img src="mainpage/images/goodicon.png"  height="15em" width="15em" /> Tags
               </button>
 
