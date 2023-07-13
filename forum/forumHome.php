@@ -82,7 +82,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="bottom-right">
-            <button type="submit"><strong>Find User</strong></button>
+            <button onclick='window.location.href = "findUser.php"'><strong>Find User</strong></button>
         </div>
     </div>
     
@@ -156,10 +156,13 @@ if ($result && mysqli_num_rows($result) > 0) {
         $commentsResult = mysqli_query($conn, $commentsQuery);
 
         if ($commentsResult && mysqli_num_rows($commentsResult) > 0) {
-            echo "<h3>Comments:</h3>";
+            echo "<div>
+            <h3>Comments:</h3></div>";
             while ($commentRow = mysqli_fetch_assoc($commentsResult)) {
                 $commentContent = $commentRow['content'];
-                echo "<p>: $commentContent</p>";
+                echo "<div id='post'>
+                <p> $commentContent</p>
+                </div>";
             }
         } else {
             echo "<p>No comments yet.</p>";
