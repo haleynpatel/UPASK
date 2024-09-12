@@ -5,6 +5,8 @@
 [![PHP](https://img.shields.io/badge/PHP-Backend%20Development-purple)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-Database%20Management-blue)](https://www.mysql.com/)
 
+## 🏆 UPS Summer 2023 Hackathon Finalist (Final Round)
+
 UPask is an online forum platform designed exclusively for UPS employees to facilitate knowledge sharing and problem-solving within the UPS developer community. It provides an environment where employees can ask and answer technical questions related to their work.
 
 ## Features
